@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorenxt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Assets/Style/color.css">
+    <link rel="stylesheet" href="./Assets/Style/fonts.css">
+    <link rel="stylesheet" href="./Assets/Style/asset-comp.css">
+    <link rel="stylesheet" href="./Assets/Style/institutions.css">
+
+    <script src="https://kit.fontawesome.com/1389bea9af.js" crossorigin="anonymous"></script>
+
+    <script src="./Assets/javascript/webpage-sxt.js"></script>
+
+</head>
+
+<body>
+    <!-- --navbar--fixedposition -->
+    <section class="nav-class">
+        <nav class="navbar navbar-expand-lg navbar-light nav-sxt" id="nav-screnxt">
+            <div class="container-fluid" id="sx-nav-container">
+                <a class="navbar-brand" href="#">
+                    <img id="logo-scale" src="./public/images/scoreNXTlogo.png" alt="Scorenxt">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                    aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <!-- all-scorenxt-ul-visibility-on -->
+
+                    <!-- <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navlist-style">
+                        <li class="nav-item">
+                            <a class="nav-link inactive" aria-current="page" href="webpage-sxt.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link inactive" href="ourcourse.html">Our courses</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="institutions.html" >Institutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link inactive" href="#" style="color: var(--dark-grey);">Contact us</a>
+                        </li>
+                    </ul> -->
+                    <div class="d-flex action-btn-cont flex-lg-row flex-column">
+                        <button class="btn-primary-sxt mb-lg-0 mb-2 me-lg-2"
+                            onclick="window.open('https://me.scorenxt.com/', '_blank')">Student Portal</button>
+                        <button class="btn-sec-sxt" onclick="window.open('https://admin.scorenxt.com', '_blank')">Admin
+                            Portal</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </section>
+
+    <div class="contact-page" id="contact-pop" style="display: none;">
+        <div class="popup-main">
+            <div class="head-popup d-flex flex-column justify-center gap-3">
+                <h2 class="head-tile highlight-txt text-center">Super! You’ve Taken the First Step</h2>
+                <p class="pop-desc text-center">Thanks for reaching out! We’re excited to connect with you. Feel free to
+                    contact us for more details.</p>
+            </div>
+            <div class="body-popup d-flex">
+                <div class="sxt-img">
+                    <img src="./public/images/contact-mobile.png" alt="ScoreNXT-splash">
+                </div>
+                <div class="contact-details ">
+                    <div class="call-us d-flex flex-column align-items-center">
+                        <div class="title ">
+                            <img src="/new/Assets/Images/contact-page/phone-call.svg" alt="call-ic" class="ct-icon">
+                            <p class="ct-title">Call Us:</p>
+                        </div>
+                        <div class="ph-number ct-row2 ">
+                            <p class="ct-content">+91 9876543210</p>
+                        </div>
+                    </div>
+                    <div class="email-us d-flex flex-column align-items-center">
+                        <div class="title ">
+                            <img src="/new/Assets/Images/contact-page/icons-email.svg" alt="call-ic" class="ct-icon">
+                            <p class="ct-title">Email Us:</p>
+                        </div>
+                        <div class="email ct-row2">
+                            <p class="ct-content">support@scorenxt.com</p>
+                        </div>
+                    </div>
+                    <div class="available-time d-flex flex-column align-items-center">
+                        <div class="title ">
+                            <img src="/new/Assets/Images/contact-page/clock.svg" alt="clock-ic" class="ct-icon">
+                            <p class="ct-title">We're Available</p>
+                        </div>
+                        <div class="available ct-row2">
+                            <p class="ct-content">Mon - Fri: 9 AM - 6 PM</p>
+                        </div>
+                    </div>
+                    <div class="action-ct d-flex flex-column align-items-center">
+                        <div class="head-row highlight-txt ">
+                            To Download our app
+                        </div>
+                        <div class="action-btn d-flex p-2">
+                            <img src="/new/Assets/Images/contact-page/gleplay.png" alt="play-store" class="g-play">
+                            <img src="/new/Assets/Images/contact-page/appstore.png" alt="app-store" class="app-store">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="action-pop d-flex">
+                <button class="btn-sec-sxt"
+                    onclick="window.open('https://youtu.be/wfvDJ8AzqxY?si=qjgibgkVC3dmh3Ye','_blank')">Watch
+                    Tutorial</button>
+                <button class="btn-primary-sxt" onclick="togglePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- bodycont -->
+    <div class="whole-align-frame ">
+        <!-- herosection -->
+        <div class="hero-crse-sec" id="course-hero">
+            <div class="hero-course-cont">
+                <div class="content-div-hero">
+                    <h2 class="hero-tile">The Most <span class="highlight-txt"> In-depth </span> </h2>
+                    <h3 class="subhead">all in one platform for your Institution</h3>
+                    <p class="hero-cont01">
+                        Manage users, payments, tests, performance assessments in one platform.
+                    </p>
+                    <p class="hero-cont01">
+                        Create, manage and deliver the high quality assessment using our personalized learning platform.
+                    </p>
+                    <p class="hero-cont02">
+                        Built for Academic Institutions, Tuition center, Educators to track their assessments with help
+                        of our personalized performance monitoring in single platform.
+                    </p>
+                    <p class="hero-cont02">
+                        Physical or virtual !! Our platform is perfect for your needs.
+                    </p>
+                    <button class="prim-light-btn-sxt" onclick="togglePopup()">Get
+                        Started</button>
+                    <div class=" respo-feature-card">
+                        <div class="c-integration01 card-inst-style">
+                            <h2 class="title-style">
+                                Cloud Integration
+                            </h2>
+                            <div class="features-sx">
+                                <div class="e-t"> <img src="./Assets/Images/Institution-page/p-test-inst.svg"
+                                        alt="event-test"> Event test</div>
+                                <div class="q-lake"> <img src="./Assets/Images/Institution-page/book_inst.svg"
+                                        alt="book"> Question lake access</div>
+                                <div class="unint-learning"><img
+                                        src="./Assets/Images/Institution-page/network-strength-off-inst.svg"
+                                        alt="network-off"> Uninterrupted Learning</div>
+                            </div>
+                        </div>
+                        <div class="trk-performance01 card-inst-style">
+                            <h2 class="title-style">
+                                Track performance
+                            </h2>
+                            <div class="features-sx">
+                                <div class="d-r"> <img src="./Assets/Images/Institution-page/pie-chart-inst.svg"
+                                        alt="report"> Daily reports</div>
+                                <div class="s-r"> <img src="./Assets/Images/Institution-page/medal-inst.svg" alt="rank">
+                                    Students ranking</div>
+                                <div class="e-list"><img
+                                        src="./Assets/Images/Institution-page/calendar-month-outline-sharp-inst.svg"
+                                        alt="enroll"> Enrollment list</div>
+                            </div>
+                        </div>
+                        <div class="Manage-portal01 card-inst-style">
+                            <h2 class="title-style">
+                                Management Portal
+                            </h2>
+                            <div class="features-sx">
+                                <div class="a-s"> 
+                                    <img src="./Assets/Images/Institution-page/user-inst.svg"alt="Assign"> User and Course
+                                </div>
+                                <div class="c-p"> 
+                                    <img src="./Assets/Images/Institution-page/course-app-inst.svg"alt="course-app"> Payment Integeration
+                                </div>
+                                <div class="t-status">
+                                    <img src="./Assets/Images/Institution-page/users-inst.svg"alt="track-te"> Test and Performance mangement
+                                </div>
+                                <!-- <div class="t-status">
+                                    <img src="./Assets/Images/Institution-page/users-inst.svg"alt="track-te"> Test mangement
+                                </div>
+                                <div class="t-status">
+                                    <img src="./Assets/Images/Institution-page/users-inst.svg"alt="track-te"> Performance mangement
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="reposit01 card-inst-style">
+                            <h2 class="title-style">
+                                Safe and Secure
+                            </h2>
+                            <div class="features-sx">
+                                <div class="quest"> 
+                                    <img src="./Assets/Images/Institution-page/bx-library-crct-inst.svg"alt="1000+quest"> End to End Encryption
+                                </div>
+                                <div class="crt-mock">
+                                    <img src="./Assets/Images/Institution-page/file-plus-inst.svg"alt="create-mock"> Unlimited space
+                                </div>
+                                <div class="add-lake"> 
+                                    <img src="./Assets/Images/Institution-page/folder-plus-inst.svg"alt="add-quest"> Flexible content management
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="logo-div-hero">
+                    <div class="feature-card-inst respo-819">
+                        <div class="c-integration card-inst-style">
+                            <h2 class="title-style">
+                                Cloud Integration
+                            </h2>
+                            <div class="features-sx">
+                                <div class="e-t"> <img src="./Assets/Images/Institution-page/p-test-inst.svg"
+                                        alt="event-test"> Event test</div>
+                                <div class="q-lake"> <img src="./Assets/Images/Institution-page/book_inst.svg"
+                                        alt="book"> Question lake access</div>
+                                <div class="unint-learning"><img
+                                        src="./Assets/Images/Institution-page/network-strength-off-inst.svg"
+                                        alt="network-off"> Uninterrupted Learning</div>
+                            </div>
+                        </div>
+                        <div class="trk-performance card-inst-style">
+                            <h2 class="title-style">
+                                Track performance
+                            </h2>
+                            <div class="features-sx">
+                                <div class="d-r"> <img src="./Assets/Images/Institution-page/pie-chart-inst.svg"
+                                        alt="report"> Daily reports</div>
+                                <div class="s-r"> <img src="./Assets/Images/Institution-page/medal-inst.svg" alt="rank">
+                                    Students ranking</div>
+                                <div class="e-list"><img
+                                        src="./Assets/Images/Institution-page/calendar-month-outline-sharp-inst.svg"
+                                        alt="enroll"> Enrollment list</div>
+                            </div>
+                        </div>
+                        <div class="Manage-portal card-inst-style">
+                            <h2 class="title-style">
+                                Management Portal
+                            </h2>
+                            <div class="features-sx">
+                                <div class="a-s"> <img src="./Assets/Images/Institution-page/user-inst.svg"
+                                        alt="Assign"> User and Course</div>
+                                <div class="c-p"> <img src="./Assets/Images/Institution-page/course-app-inst.svg"
+                                        alt="course-app"> Payment Integeration</div>
+                                <div class="t-status"><img src="./Assets/Images/Institution-page/users-inst.svg"
+                                        alt="track-te"> Test and Performance mangement</div>
+                                <!-- <div class="t-status"><img src="./Assets/Images/Institution-page/users-inst.svg"
+                                        alt="track-te"> Test mangement</div>
+                                <div class="t-status"><img src="./Assets/Images/Institution-page/users-inst.svg"
+                                        alt="track-te"> Performance mangement</div> -->
+                            </div>
+                        </div>
+                        <div class="reposit card-inst-style">
+                            <h2 class="title-style">
+                                Safe and Secure
+                            </h2>
+                            <div class="features-sx">
+                                <div class="quest"> <img src="./Assets/Images/Institution-page/bx-library-crct-inst.svg"
+                                        alt="1000+quest"> End to End Encryption</div>
+
+                                <div class="crt-mock"><img src="./Assets/Images/Institution-page/file-plus-inst.svg"
+                                        alt="create-mock"> Unlimited space</div>
+                                <div class="add-lake"> <img src="./Assets/Images/Institution-page/folder-plus-inst.svg"
+                                        alt="add-quest"> Flexible content management</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- about section in institution page is only for app store version -->
+
+        <div class="about-sxt" data-bs-spy="scroll" data-bs-target="#list-abt" data-bs-offset="0" tabindex="0">
+            <h1 class="ab-title" id="scrollspyHeading1">
+                About ScoreNXT
+            </h1>
+            <div class="mi-vi">
+                <div class="mission-cont mi-vi-cont-style">
+                    <h4 class="tile-mi">
+                        Our Mission
+                    </h4>
+                    <p class="p-mi text-center text-muted">
+                        At ScoreNXT, our mission is to empower institutions and training centers with a
+                        seamless digital platform for structured learning and skill development. We strive to enhance
+                        the learning experience by providing intuitive tools that streamline user management, course
+                        management, performance management
+                        and facilitate effective knowledge delivery.
+                    </p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="vision-cont mi-vi-cont-style">
+                    <h4 class="tile-vi">
+                        Our Vision
+                    </h4>
+                    <p class="p-vi text-center text-muted">
+                        At ScoreNXT, we understand the evolving needs of educational institutions and training centers.
+                        That’s why we are committed to build a comprehensive and user-friendly platform that
+                        simplifies user management, course management, enhances learning efficiency and fosters an
+                        engaging learning
+                        environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ourfeatures-sec -->
+
+        <!-- <div class="our-features-inst">
+            <div class="title-feature text-center">
+                <p class="subhead text-muted">Our Features</p>
+                <h2 class="features">We have an easiest way to Train, Practice and Succeed</h2>
+            </div>
+            <div class="our-feature-card">
+                <div class=" class-card card-feature-style text-center">
+                    <img src="./public/images/create-class-img.png" alt="create" class="img-card-style">
+                    <h2 class="card-tile">
+                        Create a class
+                    </h2>
+                    <p class="card-cont">
+                        Empower educators with a seamless way to create and manage classes. Whether for a single batch or an entire institution, our platform ensures a hassle-free setup.
+                    </p>
+
+                </div>
+                <div class=" bul-upload card-feature-style text-center">
+                    <img src="./public/images/bulk-upload.png" alt="bulk" class="img-card-style">
+                    <h2 class="card-tile">
+                        Bulk upload of questions
+                    </h2>
+                    <p class="card-cont">
+                        Say goodbye to repetitive tasks with our bulk upload feature. Effortlessly add, organize, and manage large volumes of questions for tests, quizzes, and practice sessions.
+                    </p>
+
+                </div>
+                <div class=" e-ptest card-feature-style text-center">
+                    <img src="./public/images/eventtest.png" alt="e-p-test" class="img-card-style">
+                    <h2 class="card-tile">
+                        Event & Practice test
+                    </h2>
+                    <p class="card-cont">
+                        Encourage learners to excel with practice tests and events tailored to their needs. From mock exams to live events, our tools simulate real-world scenarios to enhance preparation.
+                    </p>
+
+                </div>
+                <div class=" p-tracker card-feature-style text-center">
+                    <img src="./public/images/performance-trakcer.png" alt="p-track" class="img-card-style">
+                    <h2 class="card-tile">
+                        Performance tracker
+                    </h2>
+                    <p class="card-cont">
+                        Our advanced performance tracker provides in-depth insights into student progress, enabling learners, educators, and institutions to make data-driven decisions.
+                    </p>
+
+                </div>
+            </div>
+        </div> -->
+
+        <!-- our-features-app-store-v -->
+
+        <div class="our-features-inst">
+            <div class="title-feature text-center">
+                <p class="subhead text-muted">Our Features</p>
+                <h2 class="features">We have an easiest way to Train, Practice and Succeed</h2>
+            </div>
+            <div class="our-feature-card">
+                <div class=" class-card card-feature-style text-center">
+                    <img src="./public/images/create-class-img.png" alt="create" class="img-card-style">
+                    <h2 class="card-tile">
+                        Course Management
+                    </h2>
+                    <p class="card-cont">
+                        Empower educators with a seamless way to create and manage classes. Whether for a single batch
+                        or an entire institution, our platform ensures a hassle-free setup.
+                    </p>
+
+                </div>
+                <div class=" bul-upload card-feature-style text-center">
+                    <img src="./public/images/bulk-upload.png" alt="bulk" class="img-card-style">
+                    <h2 class="card-tile">
+                        Users Management
+                    </h2>
+                    <p class="card-cont">
+                        Say goodbye to repetitive tasks with our bulk upload feature. Effortlessly add, organize, and
+                        manage large volumes of questions for tests, quizzes, and practice sessions.
+                    </p>
+
+                </div>
+                <div class=" p-tracker card-feature-style text-center">
+                    <img src="./public/images/performance-trakcer.png" alt="p-track" class="img-card-style">
+                    <h2 class="card-tile">
+                        Payment Management
+                    </h2>
+                    <p class="card-cont">
+                        Our advanced performance tracker provides in-depth insights into student progress, enabling
+                        learners, educators, and institutions to make data-driven decisions.
+                    </p>
+
+                </div>
+                <div class=" e-ptest card-feature-style text-center">
+                    <img src="./public/images/eventtest.png" alt="e-p-test" class="img-card-style">
+                    <h2 class="card-tile">
+                        Test Management
+                    </h2>
+                    <p class="card-cont">
+                        Encourage learners to excel with event tests tailored to their needs. From mock exams to live
+                        events, our tools simulate real-world scenarios to enhance preparation.
+                    </p>
+
+                </div>
+                <div class=" p-tracker card-feature-style text-center">
+                    <img src="./public/images/performance-trakcer.png" alt="p-track" class="img-card-style">
+                    <h2 class="card-tile">
+                        performance Management
+                    </h2>
+                    <p class="card-cont">
+                        Our advanced performance tracker provides in-depth insights into student progress, enabling
+                        learners, educators, and institutions to make data-driven decisions.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- why-sec -->
+        <div class="why-container">
+            <h1 class="title">Why Choose ScoreNxt?</h1>
+            <div class="hexagon-grid ">
+
+                <div class="row-01-2cont d-flex">
+                    <div class="hexagon advanced-security">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/scurity-why.svg"
+                                    alt="">
+                            </div>
+                            <h3 class="hexagon-title">Advanced Security</h3>
+                            <p class="hexagon-text">Our state-of-the-art technology and strict protocols ensure that
+                                your information remains safe and secure at all times.</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagon manage-performance">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/manage-perform-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Manage Performance</h3>
+                            <p class="hexagon-text">Track performance, and present reliable data with confidence using
+                                our reliable reporting system.</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagon advanced-security">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/scurity-why.svg"
+                                    alt="">
+                            </div>
+                            <h3 class="hexagon-title">Assign Student on relevant courses</h3>
+                            <p class="hexagon-text">Science or Maths or any languages. Assign your users on the learning
+                                path and let them learn what the world has to offer.</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagon manage-performance">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/manage-perform-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Multilingual Support</h3>
+                            <p class="hexagon-text">Arabic to Zulu, our apps support most global languages.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row-02-03cont d-flex">
+
+                    <div class="hexagon quick-content">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/quick-content-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Quick Content Creation</h3>
+                            <p class="hexagon-text">Effortlessly generate engaging and high-quality content in no time
+                                with our quick content creation section.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="hexagon test-customization">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/test-custom-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Test Customization</h3>
+                            <p class="hexagon-text">Our platform offers a wide range of subjects and difficulty levels,
+                                allowing you to practice and assess your knowledge effectively.</p>
+                        </div>
+                    </div> -->
+
+                    <!-- test-section-app-store-v -->
+
+                    <div class="hexagon test-customization">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/test-custom-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Smart Scheduling</h3>
+                            <p class="hexagon-text">Our platform enables institutions to effortlessly schedule and
+                                manage tests, ensuring students are informed and prepared.</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagon intuitive-ui">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/intuitive-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Intuitive UI</h3>
+                            <p class="hexagon-text">Our platform prioritizes user accessibility, making it easy for
+                                individuals of all abilities to navigate, interact, and engage with our products.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="row-01-2cont d-flex">
+                    <div class="hexagon advanced-security">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/scurity-why.svg"
+                                    alt="">
+                            </div>
+                            <h3 class="hexagon-title">Assign Student on relevant courses</h3>
+                            <p class="hexagon-text">Science or Maths or any languages. Assign your users on the learning
+                                path and let them learn what the world has to offer.</p>
+                        </div>
+                    </div>
+
+                    <div class="hexagon manage-performance">
+                        <div class="hexagon-content">
+                            <div class="hexagon-icon"><img src="./Assets/Images/Institution-page/manage-perform-why.svg"
+                                    alt=""></div>
+                            <h3 class="hexagon-title">Multilingual Support</h3>
+                            <p class="hexagon-text">Arabic to Zulu, our apps support most global languages.</p>
+                        </div>
+                    </div>
+
+
+                </div> -->
+
+
+
+
+
+
+
+            </div>
+
+            <div class="cta-section">
+                <h2 class="cta-title-01">Ready to join with us</h2>
+                <button class=" btn-primary-sxt" onclick="togglePopup()">Get
+                    Started</button>
+            </div>
+        </div>
+
+
+        <!-- who can benefit -->
+
+        <div class="who-sec">
+            <h2 class="Sol-tile text-center">
+                Our Solutions
+            </h2>
+            <div class="content-who-sec">
+                <div class="right-txt">
+                    <h2 class="right-tile">
+                        Exploring the Advantages of our product for Various Usage Scenarios
+                    </h2>
+
+                    <div class="body-content d-flex flex-column gap-1">
+                        <div class="educators d-flex flex-column gap-1">
+                            <h2 class="b-tile d-flex">
+                                <img src="./Assets/Images/Institution-page/educators.svg" alt="educators">
+                                <div class="tile-line">
+                                    <span class="tile-style">Instituation/Educators</span>
+                                    <div class="line"></div>
+                                </div>
+                            </h2>
+                            <p class="b-content">
+                                Expand your reach and impact by sharing your expertise through interactive online
+                                courses. Our platform provides an intuitive space to design, organize, and deliver
+                                engaging learning experiences.
+                            </p>
+                        </div>
+                        <div class="institutions d-flex flex-column gap-1">
+                            <h2 class="b-tile d-flex">
+                                <img src="./Assets/Images/Institution-page/insti&pri.svg" alt="insti&private">
+                                <div class="tile-line">
+                                    <span class="tile-style">Schools/ Universities</span>
+                                    <div class="line"></div>
+                                </div>
+                            </h2>
+                            <p class="b-content">
+                                Enhance your teaching approach with a flexible and structured digital platform designed
+                                for institutions and tuition centers. Easily organize courses, track student progress,
+                                and create an interactive learning environment.
+                            </p>
+                        </div>
+                        <!-- <div class="schools-clg d-flex flex-column gap-1">
+                            <h2 class="b-tile d-flex">
+                                <img src="./Assets/Images/Institution-page/school-clg.svg" alt="schools-clg">
+                                <div class="tile-line">
+                                    <span class="tile-style">Schools/ Colleges</span>
+                                    <div class="line"></div>
+                                </div>
+                            </h2>
+                            <p class="b-content">
+                                Bring innovation to education with a seamless digital learning experience tailored for
+                                schools and colleges. Facilitate interactive lessons, provide structured content, and
+                                enable students to learn at their own pace.
+                            </p>
+                        </div> -->
+                        <!-- <div class="learners">
+                            <h2 class="b-tile d-flex">
+                                <img src="./Assets/Images/Institution-page/graduation-cap.svg" alt="learners">
+                                <div class="tile-line">
+                                    <span class="tile-style">Learners</span>
+                                    <div class="line"></div>
+                                </div>
+                            </h2>
+                            <p class="b-content">
+                                Transform your knowledge and expertise into a valuable source of income by creating your
+                                own online course or membership program focused on training and education.
+                            </p>
+                        </div> -->
+
+                    </div>
+
+                    <!-- <div class="action-div d-flex ">
+                        <div class="btn-primary-sxt">To know more</div>
+                    </div> -->
+
+
+
+
+
+                </div>
+
+                <div class="left-cta">
+                    <div class="main-cta text-center">
+                        <h2 class="mn-tile">
+                            Are you curious about how it works?
+                        </h2>
+                        <p class="mn-content text-muted">
+                            We have a live demo for your
+                        </p>
+
+                        <div class="demo-btn-cont">
+                            <img src="./public/images/Userauthentication-small-admin.png" alt="Admin-portal">
+                            <!-- <button class="go-live">Go to Live demo <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="21" viewBox="0 0 20 21" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.9239 1.66036C19.1729 1.90939 19.2385 2.28808 19.0878 2.60636L11.5878 18.4397C11.4371 18.7578 11.1028 18.9469 10.7525 18.9122C10.4023 18.8775 10.1116 18.6265 10.0262 18.2851L8.48081 12.1035L2.29921 10.5581C1.95774 10.4727 1.70673 10.182 1.67205 9.83173C1.63736 9.48147 1.82649 9.14718 2.14458 8.9965L17.9779 1.4965C18.2962 1.34574 18.6749 1.41133 18.9239 1.66036ZM4.96245 9.50592L9.3701 10.6078C9.66867 10.6825 9.9018 10.9156 9.97644 11.2142L11.0784 15.6218L16.5827 4.0016L4.96245 9.50592Z"
+                                        fill="white" />
+                                </svg></button> -->
+                        </div>
+
+                        <div class="hr-line"></div>
+                        <div class="download-btn">
+                            <p class="sub-text text-muted">To Download Our App</p>
+                            <button class="g-play"><img src="./public/images/google-play-button.png"
+                                    alt="play-store"></button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- whatwehave -->
+        <div class="what-container">
+            <h2 class="section-title text-center">What we have?</h2>
+            <!-- What we have section -->
+            <section class="feature-section">
+                <div class="feature-content">
+                    <div class="head-sec-feature">
+                        <h3 class="feature-title fw-bold">Progressive Web App</h3>
+                        <p class="sub-txt text-muted">Built on latest cutting edge technologies to give fast
+                            performance.</p>
+                    </div>
+
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">User Management </h4>
+                                <p class="feature-item-description">Easily manage user accounts, permissions, and roles.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Content Management</h4>
+                                <p class="feature-item-description">Take full control of your content with an
+                                    easy-to-use web portal and manage all your educational content efficiently.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Analytics and Reports</h4>
+                                <p class="feature-item-description">Access detailed insights about your students'
+                                    performance and track their progress with our comprehensive reporting system.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Security and Permissions</h4>
+                                <p class="feature-item-description">Configure access levels and manage user permissions
+                                    to ensure data security and privacy.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- hidden-for-app-store -->
+                    <!-- <a href="#" class="btn-primary-sxt">Learn More</a> -->
+                </div>
+                <div class="feature-image">
+                    <img src="./public/images/course-details-page.png" alt="Progressive Web App Interface">
+                </div>
+
+            </section>
+
+            <!-- Built for Mobiles section -->
+            <section class="feature-section">
+                <div class="feature-content feature-mobile">
+                    <div class="head-sec-feature">
+                        <h3 class="feature-title fw-bold">Built for Mobiles</h3>
+                        <p class="sub-txt text-muted">Built on latest cutting edge technologies to give fast
+                            performance.</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Event Test</h4>
+                                <p class="feature-item-description">With notifications and a clear timetable, engaging
+                                    students in assessments has never been more streamlined.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Test Customization:</h4>
+                                <p class="feature-item-description">Take full control of your content with the ability
+                                    to create, edit, and organize various types of content.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Instant Notifications</h4>
+                                <p class="feature-item-description">Stay updated with real-time notifications about new
+                                    content, updates, and student activities.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div>
+                                <h4 class="feature-item-title">Security and Permissions</h4>
+                                <p class="feature-item-description">Ensure data protection with robust security features
+                                    and granular permission controls.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- hidden-for-app-store -->
+                    <!-- <a href="#" class="btn-primary-sxt">Learn More</a> -->
+                </div>
+                <div class="mobile-screenshots">
+                    <img src="./public/images/create-test-page.png" alt="Mobile App Screenshot 1"
+                        class="mobile-screenshot">
+                    <img src="./public/images/test-plate.png" alt="Mobile App Screenshot 2"
+                        class="mobile-screenshot respo-hidden">
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section-last">
+                <div class="blur-effect blur-1"></div>
+                <div class="blur-effect blur-2"></div>
+                <div class="cta-animae">
+
+                    <h2 class="cta-title">Are you ready?</h2>
+                    <!-- talk-to-us-for-app-store -->
+                    <p class="cta-subtitle">Get start with us!</p>
+
+
+                    <!-- signup-today-for-all-users -->
+                    <!-- <p class="cta-subtitle">Sign up Today!</p> -->
+
+                    <button class="btn-primary-sxt" onclick="togglePopup()">Click here</button>
+
+
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- quick-guide -->
+
+
+
+        <!-- Frequent questions -->
+
+
+        <!-- embed documentation -->
+
+        <!-- <div class="user-documentation-webapp style-user" id="popup-documentation">
+            <iframe src="https://scribehow.com/embed/User_Documentation_ScoreNXT_WebApp__41gzJtg_REyDmmj4VVl74Q" width="60%" height="640" allowfullscreen frameborder="0"></iframe>
+        </div> -->
+
+
+
+        <!-- footer   -->
+
+        <footer class="sxt-footer-contianer">
+            <div class="footer-cont">
+                <div class="about-sxt-ft">
+                    <h2 class="about">
+                        About ScoreNxt
+                    </h2>
+                    <div class="d-flex flex-column gap-2" id="list-abt">
+                        <ul class="scrl-spy d-flex flex-column gap-2 "
+                            style="list-style-type: none; padding: 0; margin: 0;">
+                            <li class="">
+                                <a class=" ft-link" href="#scrollspyHeading1">About us </a>
+                            </li>
+                            <li class="">
+                                <a class=" ft-link" href="https://scorenxt.com/terms_and_condition.html"
+                                    target="_blank">Terms & Conditions </a>
+                            </li>
+                            <li class="">
+                                <a class=" ft-link" href="https://scorenxt.com/privacy_policy.html"
+                                    target="_blank">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- important-links -->
+                <!-- <div class="imp-links-ft d-flex flex-column">
+                    <h2 class="imp-links">
+                        Important Links
+                    </h2>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="ft-link">TNPSC</a>
+                        <a href="#" class="ft-link">SSC</a>
+                        <a href="#" class="ft-link">UGC NET</a>
+                        <a href="#" class="ft-link">UPSC</a>
+                    </div>
+
+                </div> -->
+                <div class="our-app-dld">
+                    <h2 class="our-app">
+                        Our Apps
+                    </h2>
+                    <img src="./public/images/scoreNXTlogo-light.png" alt="logo" class="footer-logo-resp">
+                    <img src="./public/images/google-play-button.png" alt="" class="gplay">
+                </div>
+                <div class="conct-wit-us">
+                    <span class="upper">Connect with us</span>
+                    <img src="./public/images/scoreNXTlogo-light.png" alt="logo" class="footer-logo">
+                    <div class="mail-ad d-flex align-items-center gap-1">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:scorenxt@gmail.com" class="mailad" target="_blank">contact@scorenxt.com</a>
+                    </div>
+                    <div class="yt-link d-flex align-items-center gap-1">
+                        <i class="fa-brands fa-youtube text-danger"></i>
+                        <a href="https://youtu.be/wfvDJ8AzqxY?si=KFBxLT7nkbtXmfpE" class="ytlink" target="_blank">
+                            @scorenxt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 ScoreNxt.com. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="./Assets/javascript/webpage-sxt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const togglePopup = () => {
+            const popup = document.getElementById("contact-pop");
+            popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+        };
+
+
+
+    </script>
+
+</body>
+
+</html>
