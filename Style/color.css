@@ -1,0 +1,60 @@
+:root{
+    /* base-color */
+
+    --black-sxt: #000000 ;
+    --black-dark: #3B3A3A ; 
+    --black-light:#626262 ;
+    --dark-grey:#B2B5B7;
+    --darkest-grey:#8F9AA2;
+    --light-grey:#E0E0E0;
+    --primary:#1953E7;
+    --On-primary:#FFFFFF;
+    --on-primary99:#F6F8FF;
+    --primary-50:#3B6AFD;
+    --primary-60: #5A7EFE;
+    --primary-95:#EFF0FF;
+    --On-secondary:#161B2C;
+    --success:#068B23;
+    --tertiary95: #DFF4FF;
+
+
+    /* components-color */
+
+    --input-field-white: rgba(217, 217, 217, 0.14);
+    --search-bar-bg:rgba(242, 240, 244, 0.60);
+    
+    /* linear-gradients */
+
+    --button-teri-linear:linear-gradient(90deg, #ED5F69 -2.68%, #F9801C 100%);
+    --light-surface1: linear-gradient(0deg, rgba(16, 79, 227, 0.04) 0%, rgba(16, 79, 227, 0.04) 100%), #FCFBFF;
+    --sidebar-web-linear: linear-gradient(180deg, #042B90 -19.24%, rgba(4, 222, 222, 0.79) 98.73%);
+    --website-hero-section:linear-gradient(101deg, rgba(255, 255, 255, 0.90) 0.29%, rgba(255, 255, 255, 0.90) 95.89%);
+    --lt-blu-linear-bg: linear-gradient(90deg, rgba(25, 83, 231, 1) 0%, rgba(4, 222, 222, 0.79) 100% ), #1953E7;
+    --footer-web-gradient:linear-gradient(270deg, #273E88 -13.88%, #091941 72.79%);
+    --institution-hero-sec:linear-gradient(270deg, #273E88 -13.88%, #091941 72.79%);
+    --who-180-linear-white:linear-gradient(180deg, #FFF -50%, rgba(255, 255, 255, 0.04) 120.37%);
+    
+    /* courses-linear-gradients */
+
+    --tnpsc-linear:linear-gradient(180deg, #2E9D1C 10.94%, #247017 46.56%);
+
+
+    /* website-php-card-linear */
+
+    --blue-linear:linear-gradient(90deg, #1953E7 0%, rgba(4, 222, 222, 0.79) 100%);
+    --own-ent-bg-linear:linear-gradient(101deg, #212E5A 0.29%, #2A084D 79.46%);
+    --purple-gd-linear:linear-gradient(90deg, rgba(25, 83, 231, 0.60) 0%, rgba(109, 59, 252, 0.47) 100%);
+
+
+    /* stacked-card-variables */
+
+    --cards: 4;
+    --cardHeight: 60vh;
+    --cardTopPadding: 4em;
+    --cardMargin: 4vw;
+    --cardposition: 10%;
+    
+
+
+
+}

@@ -1,0 +1,608 @@
+@import url(/Assets/Style/color.css);
+@import url(/Assets/Style/fonts.css);
+
+body{
+    font-family: var(--ppn-regular) ;
+    overflow-x: hidden;
+
+}
+
+
+.whole-align-frame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--on-primary99);
+    padding-top: 120px;
+    gap: 52px;
+    z-index: -4;
+}
+
+
+
+
+
+
+
+/* headsection */
+
+.whole-courses{
+    padding: 0px 60px ;
+    width: 100%;
+    max-width: 1400px;
+    
+}
+
+.head-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.cont-head{
+    width: 50%;
+}
+
+.icon-head-sec{
+    width: 50%;
+    align-self: flex-end;
+    text-align: end;
+}
+
+.head-name{
+    color: var(--on-secondary);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.head-content{
+    color: var(--on-secondary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+/* card-crousel */
+
+.card-crousel-sec{
+    padding: 8px 0px 8px 90px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow:scroll;
+}
+
+.card-align{
+    display: flex;
+    width: max-content;
+    gap: 24px;
+    
+}
+
+.card-sale{
+    width: 370px;
+    height: 446px;
+    border-radius: 2px;
+    background: var(--On-primary);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.11);
+    position: relative;
+    z-index: -2;
+    
+}
+
+.card-sale::before{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: url(/Assets/Images/course-logo/tn-logo-big.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.06;
+}
+
+
+.head-sale{
+    background: var(--lt-blu-linear-bg);
+    height: 30%;
+    align-content: center;
+    
+}
+.style-head{
+    font-family: var(--din-bold);
+    color: var(--On-primary);
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 33.6px;
+    opacity: 0.4;
+    
+    
+
+
+}
+
+.sale-badge{
+    display: flex;
+    width: 80%;
+    height:66px;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    
+    
+}
+
+.sale-badge img{
+    position: absolute;
+    width: 40px;
+    height: auto;
+    left: 10%;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.title{
+    display: flex;
+    width: 242px;
+    padding: 6px 6px 6px 24px;
+    align-items: center;
+    color: var(--on-secondary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    background: var(--On-primary);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    right: 0;
+    top: 10%;
+   
+
+}
+
+
+.body-sale{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 24px 24px;
+    margin-top: 10px;
+    
+}
+
+.medium-row{
+    display: flex;
+    align-items: flex-start;
+    color: var(--primary-60);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.highlights-row{
+    color: var(--on-secondary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.button-div{
+    width: 100%;
+    text-align: end;
+}
+
+.hover-btn{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.txt-btn{
+    border: none;
+    
+}
+
+
+/* media-query */
+
+@media only screen and (min-width:768px) and (max-width:1020px){
+
+    .head-content{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .head-name{
+        font-size: 30px;
+    }
+    
+    
+    
+    /* card-crousel */
+    
+    .card-crousel-sec{
+        padding: 8px 0px 8px 0px;
+        
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .head-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cont-head{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .head-content{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .head-name{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .icon-head-sec{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+        
+    }
+
+    .card-crousel-sec{
+        padding: 8px 0px 8px 0px;
+        
+    }
+}
+
+/* all-courses */
+
+.all-courses{
+    display: flex;
+    max-width: 1400px;
+    flex-direction: column;
+    padding: 0px 60px;
+    gap: 52px;
+}
+
+.rw-1-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rw-title{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--on-secondary);
+}
+
+.action-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* cards */
+
+.btn-blue-overlay{
+    display: flex;
+    width: 36px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2px;
+    flex-shrink: 0;
+    border-radius: 0px 6px;
+    background: var(--tertiary95);
+    color: var(--primary);
+    font-size: 6px;
+    
+}
+
+.course-card-base{
+    font-family: var(--avn-regular);
+    width: 262px;
+    height: 80px;
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--On-primary);
+    box-shadow: -0.8px 0.8px 3.2px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    color: var(--On-secondary);
+}
+
+.course-pkg-cont{
+    gap: 12px;
+}
+
+.logo-name{
+    display: flex;
+    width: 80px;
+    
+    flex-shrink: 0;
+    border-radius: 6px;
+    align-self: stretch;
+    font-size: 16px;
+    background:  var(--tnpsc-linear);
+    color: var(--On-primary);
+    font-weight: 800;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.logo-name span{
+    z-index: 3;
+}
+
+.logo-name::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(/public/images/tnpsc-logo.png) no-repeat center;
+    opacity: 0.2;
+    z-index: 2;
+
+
+}
+
+.logo-name span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(/Assets/Images/bg-shape-vector.svg) no-repeat center;
+    opacity: 0.8;
+    z-index: 1;
+
+
+}
+
+
+
+
+.logo-name .sub-text{
+    font-size: 6px;
+    color: #FBF440;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10%;
+    
+}
+.course-pkg-cont{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-tile{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.pkg-lvl{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.offer{
+    font-size: 12px;
+    color: var(--success);
+    
+}
+
+.price{
+    font-size: 12px;
+}
+
+.course-content-details p{
+    margin: 0;
+}
+
+
+.card-row-01{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    row-gap: 24px;
+    padding: 24px 0px;
+}
+
+/* media-query */
+
+@media only screen and (max-width:930px){
+
+    .card-row-01{
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:624px){
+
+
+    .rw-title{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .search-bar{
+        width: 60%!important;
+        padding: 6px 6px 6px 6px;
+    }
+
+    .rw-1-title{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-items{
+        justify-content: center;
+    }
+}
+
+/* CTA-section */
+
+.cta-section-last {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    align-content: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background: var(--On-primary);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.cta-animae{
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.blur-effect {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.6;
+}
+
+.blur-1 {
+    top: 30%;
+    left: 10%;
+    background: rgba(254, 83, 187, 1);
+}
+
+.blur-2 {
+    bottom: 30%;
+    right: 10%;
+    background: rgba(9, 251, 211, 1);
+}
+
+.cta-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.cta-subtitle {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    color: #4A5568;
+    z-index: 1;
+    /* margin-bottom: 2rem; */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #4299E1;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.btn-primary-sxt{
+    display: inline-block !important;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* media-query */
+
+@media only screen and (min-width:769px) and (max-width:1057px){
+
+    .cta-animae{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .cta-title {
+        font-size: 24px;
+    }
+
+    .cta-subtitle{
+        font-size: 28px;
+    }
+
+    .cta-animae{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
